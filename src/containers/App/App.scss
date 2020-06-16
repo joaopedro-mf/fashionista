@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+$font:'Oswald', sans-serif;
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: $font;
+}
+
+body {
+  padding-top: 56px;
+  background-color:  #fff;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  position: relative;
+  width: 100%;
+}
+

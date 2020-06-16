@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+$font:'Oswald', sans-serif;
+.product {
+    padding: 1em;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    color: black;
+    font-family: $font;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    &__image{
+        width:100%;
+        overflow:hidden;
+        position: relative;
+
+        img{ 
+            width: 100%;
+        }
+
+        &--saleIcon{
+            width: 35%;
+            position: absolute;
+            border-style: solid;
+            border-width:thin;
+            border-color: red;
+            color: red;
+        }
+
+        &--heartIcon{
+            width: 0;
+            height: 0;
+            svg {
+                width: 0;
+            }
+        }
+    }
+
+    &__descr{
+        padding-top: 0.2em;
+        padding-left: 0.2em;
+        text-align: left;
+       
+    }
+
+    &__name{
+        padding: 0.5em ;
+        font-size: 1.2em;
+    }
+
+    &__prices{
+        padding-left: 0.7em;
+        font-size: 1.1em;
+        font-weight: bolder;
+
+        &--sale{
+            font-size: 0.9em;
+            font-weight: normal;
+            color: gray;
+            text-decoration-line: line-through;
+            padding-left: 0.8em ;
+        }
+    }
+
+    &__conditions{
+        font-size: 0.9em;
+        padding-top: .5em ;
+        padding-left: .7em;
+    }
+
+}
+
+@media screen and (min-width: 800px){
+    .product {
+        width: 25%;
+    }
+    
+}
+
+@media screen and (min-width: 400px){
+    .product {
+    &__image{
+        &--saleIcon{
+            width: 20%;
+        }
+        &--heartIcon{
+            width: 25%;
+            position: absolute;
+            right: 0;
+            :hover{
+                cursor: pointer;
+            }
+            svg {
+                width: 22px;
+            }
+            &-selected{
+                fill:red
+            }
+        }
+    }
+}
+}

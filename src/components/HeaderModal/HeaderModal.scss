@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+$font:'Oswald', sans-serif;
+
+.headerModal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    border-bottom: solid;
+    border-width:thin;
+    border-color:#807d55;
+    &__arrow{
+        fill: #000000;
+        padding: 11px
+    }
+    &__name{ 
+        font-size: 1.2em ;
+        font-family: $font;
+        margin: auto;
+    }
+}

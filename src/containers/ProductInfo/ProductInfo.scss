@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+$font:'Oswald', sans-serif;
+
+.container{
+    padding: 0;
+}
+
+.productInfo{
+    display: flex;
+    color: black;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    font-family: $font;
+    overflow: auto;
+    overscroll-behavior: contain;
+    &__image{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+
+        &--saleIcon{
+            font-size:1.2em;
+            padding: 10px;
+            position: absolute;
+            border-style: solid;
+            border-width:thin;
+            border-color: red;
+            color: red;
+        }
+    }
+
+    &__content{
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+    }
+
+    &__name{
+        font-size: 1.5em;
+        padding: 10px;
+        border-bottom: thin solid rgb(196, 196, 196);
+    }
+
+    &__prices{
+        padding: 10px ;
+        font-size: 1.3em;
+        font-weight: bolder;
+
+        &--sale{
+            font-size: 0.9em;
+            font-weight: normal;
+            color: gray;
+            text-decoration-line: line-through;
+            padding-left: 0.8em ;
+        }
+    }
+
+    &__conditions{
+            padding-left: 10px;
+            color:gray
+    }
+
+    &__color{
+        padding: 10px;
+        font-size: 1.1em;
+    }
+
+    &__options{
+        margin-top: 20px;
+    }
+
+    &__sizes{
+        font-size: 1.1em;
+        padding: 10px;
+        color: gray;
+        p{
+            padding: 5px;
+        }
+    }
+
+    &__size{
+        padding: 5px;
+        display:flex;
+        flex-direction: row;
+        &--able{
+            margin-right:10px ;
+            padding: 10px;
+            border: thin solid rgb(196, 196, 196);
+            cursor: pointer;
+            &-selected{
+                border: thin solid rgb(196, 196, 196);
+                margin-right:10px ;
+                padding: 10px;
+                background-color:  #fffde8;
+            }
+        }
+        &--disable{
+            padding: 10px;
+            margin-right:10px ;
+            background-color: rgba(165, 163, 163, 0.356);
+            color:white;
+            text-decoration: line-through;
+            border: thin solid rgb(196, 196, 196);
+        }
+    }
+
+    &__status{
+        width: 100%;
+        font-size: 1.2EM;
+        height: 30px;
+        border-radius: 10px;
+    }
+    &__sucess{
+        border: thin solid rgb(196, 196, 196);
+        background-color: rgb(181, 238, 181);
+        padding: 10px;
+        animation:fadein .5s;
+    }
+    &__error{
+        padding: 10px;
+        background-color: rgb(245, 110, 110);
+        border: thin solid rgb(196, 196, 196);
+        animation:fadein .5s;
+    }
+
+    &__button{
+        background-color: #fffde8;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3em;
+        padding: 20px;
+        box-shadow: 0 0.1rem 1rem 0 rgba(0,0,0,.3);
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .productInfo {
+        display: flex;
+        flex-direction: row;
+
+        &__image{
+            width: 35%;
+            img{
+                width: 100%;
+            }
+        }
+
+        &__content{
+            padding-top: 10px ;
+        }
+    }
+}
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity: 1;
+	}
+}

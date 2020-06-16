@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+$font:'Oswald', sans-serif;
+.itemproductModal{
+
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-family: $font;
+
+    &__image{
+        height: 142px;
+        img{
+            height: 100%;
+        }
+    }
+
+    &__description{
+        flex-direction: column;
+    }
+
+    &__name{
+        font-size: 1.15em;
+        padding: 10px 0;
+    }
+
+    &__price{
+        font-size: 1.1em;
+        padding: 5px 0;
+    }
+
+    &__conditions{
+        font-size: 0.9em;
+        color: gray ;
+    }
+
+    &__delete{
+        width: 22px;
+        height: 100px; 
+       padding-top: 60px;
+        
+        svg{
+            fill: #ec2a2a;
+        }
+    }
+
+    &__items{
+        position: relative;
+        font-size: 1.5em;
+        padding-top: 20px;
+        &--value{
+            font-size: 0.7em;
+            border: thin solid black;
+        }
+    }
+}

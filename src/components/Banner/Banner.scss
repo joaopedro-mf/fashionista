@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+$rocksalt:'Rock Salt', cursive;
+
+.banner {
+    & .container{
+        padding: 0;
+    } 
+
+    &__image{
+        height: 35em;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+    }
+
+    &__title{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        font-family: $rocksalt;
+        color: #ffffff;
+        font-size: 2em;
+        display: flex;
+    }
+}

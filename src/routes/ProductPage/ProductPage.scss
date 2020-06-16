@@ -1,0 +1,12 @@
+.productPage{
+    display: flex;
+    width: 100%;
+    padding-top:60px;
+}
+
+@media screen and (min-width: 992px){
+    .productPage {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+}
